@@ -49,7 +49,7 @@
     <noscript><style>.loader{display:none!important}.js .reveal,.js [data-split] .wi{opacity:1!important;transform:none!important}html.is-loading{overflow:auto!important}</style></noscript>
 
     <!-- ═════════ Datos estructurados (Google) ═════════
-         TODO: al tener los datos reales, agregar "telephone", "address" y "openingHours" -->
+         TODO: al tener los datos reales, agregar "address" y "openingHours" -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -60,6 +60,7 @@
       "url": "https://www.tu-dominio.com/",
       "image": "https://www.tu-dominio.com/img/web/og-cover.jpg",
       "logo": "https://www.tu-dominio.com/img/web/favicon.png",
+      "telephone": "+52 624 161 3429",
       "servesCuisine": ["Mexicana", "Comida estilo Guerrero"],
       "slogan": "Tortillas hechas a mano",
       "hasMenu": {
@@ -70,45 +71,78 @@
             "@type": "MenuSection",
             "name": "Platillos",
             "hasMenuItem": [
-              {"@type": "MenuItem", "name": "Milanesas de res y pollo"},
-              {"@type": "MenuItem", "name": "Tacos dorados"},
-              {"@type": "MenuItem", "name": "Mole rojo"},
-              {"@type": "MenuItem", "name": "Costilla de puerco verde y roja"},
-              {"@type": "MenuItem", "name": "Enchiladas verdes y rojas"},
-              {"@type": "MenuItem", "name": "Chiles rellenos"},
-              {"@type": "MenuItem", "name": "Pescado frito"}
+              {"@type": "MenuItem", "name": "Guacamole con totopos", "offers": {"@type": "Offer", "price": "100", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Quesabirrias", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Milanesa empanizada", "offers": {"@type": "Offer", "price": "170", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Sopes de asada o pollo", "offers": {"@type": "Offer", "price": "50", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Quesadillas", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Huarache", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Tacos dorados con consomé", "offers": {"@type": "Offer", "price": "160", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Mole rojo", "offers": {"@type": "Offer", "price": "160", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Carne de puerco en salsa verde o roja", "offers": {"@type": "Offer", "price": "160", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Enchiladas verdes o rojas de pollo", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Chiles rellenos", "offers": {"@type": "Offer", "price": "160", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Bistec ranchero", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Fajitas de pollo o de carne", "offers": {"@type": "Offer", "price": "170", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Cecina frita", "offers": {"@type": "Offer", "price": "180", "priceCurrency": "MXN"}}
             ]
           },
           {
             "@type": "MenuSection",
             "name": "Caldos",
             "hasMenuItem": [
-              {"@type": "MenuItem", "name": "Caldo de res"},
-              {"@type": "MenuItem", "name": "Caldo de pollo"},
-              {"@type": "MenuItem", "name": "Caldo de camarón"}
+              {"@type": "MenuItem", "name": "Caldo de pollo", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Caldo de res", "offers": {"@type": "Offer", "price": "170", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Caldo de camarón", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Birria de res", "offers": {"@type": "Offer", "price": "170", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Menudo", "offers": {"@type": "Offer", "price": "160", "priceCurrency": "MXN"}}
             ]
           },
           {
             "@type": "MenuSection",
-            "name": "De la casa",
+            "name": "Mariscos",
             "hasMenuItem": [
-              {"@type": "MenuItem", "name": "Menudo"},
-              {"@type": "MenuItem", "name": "Birria de res"},
-              {"@type": "MenuItem", "name": "Quesabirrias"},
-              {"@type": "MenuItem", "name": "Barbacoa"},
-              {"@type": "MenuItem", "name": "Bistec ranchero"},
-              {"@type": "MenuItem", "name": "Cecina asada"}
+              {"@type": "MenuItem", "name": "Camarones mariposa al ajo", "offers": {"@type": "Offer", "price": "220", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Camarones mariposa empanizados", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Pescado frito", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Pescado filete", "offers": {"@type": "Offer", "price": "210", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Pescado a la diabla", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "MXN"}}
             ]
           },
           {
             "@type": "MenuSection",
             "name": "Desayunos",
             "hasMenuItem": [
-              {"@type": "MenuItem", "name": "Huevos al gusto"},
-              {"@type": "MenuItem", "name": "Huevos rancheros"},
-              {"@type": "MenuItem", "name": "Chilaquiles verdes y rojos"},
-              {"@type": "MenuItem", "name": "Omelet"},
-              {"@type": "MenuItem", "name": "Hotcakes"}
+              {"@type": "MenuItem", "name": "Huevos al gusto", "offers": {"@type": "Offer", "price": "130", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Huevos rancheros", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Huevos con tocino", "offers": {"@type": "Offer", "price": "130", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Huevos con chorizo", "offers": {"@type": "Offer", "price": "130", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Omelet", "offers": {"@type": "Offer", "price": "140", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Chilaquiles con huevo", "offers": {"@type": "Offer", "price": "130", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Chilaquiles con carne asada o pollo", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Chilaquiles con cecina", "offers": {"@type": "Offer", "price": "180", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Hotcakes con fruta de la estación", "offers": {"@type": "Offer", "price": "140", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Quesadilla con carne", "offers": {"@type": "Offer", "price": "150", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Sincronizadas", "offers": {"@type": "Offer", "price": "115", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Burritos con machaca", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "MXN"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Bebidas",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Jugo de naranja", "offers": [{"@type": "Offer", "name": "Chico", "price": "50", "priceCurrency": "MXN"}, {"@type": "Offer", "name": "Mediano", "price": "75", "priceCurrency": "MXN"}, {"@type": "Offer", "name": "Grande", "price": "100", "priceCurrency": "MXN"}]},
+              {"@type": "MenuItem", "name": "Licuado de plátano", "offers": {"@type": "Offer", "price": "70", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Licuado de granola", "offers": {"@type": "Offer", "price": "80", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Chocomil con plátano", "offers": {"@type": "Offer", "price": "80", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Taza de café", "offers": {"@type": "Offer", "price": "35", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Agua de jamaica", "offers": {"@type": "Offer", "price": "50", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Agua de horchata", "offers": {"@type": "Offer", "price": "60", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Té caliente o helado"},
+              {"@type": "MenuItem", "name": "Refresco", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Coca-Cola", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "MXN"}},
+              {"@type": "MenuItem", "name": "Limonada o naranjada natural", "offers": [{"@type": "Offer", "name": "Chico", "price": "50", "priceCurrency": "MXN"}, {"@type": "Offer", "name": "Media", "price": "65", "priceCurrency": "MXN"}, {"@type": "Offer", "name": "Grande", "price": "100", "priceCurrency": "MXN"}]},
+              {"@type": "MenuItem", "name": "Limonada o naranjada mineral", "offers": {"@type": "Offer", "price": "50", "priceCurrency": "MXN"}}
             ]
           }
         ]
@@ -263,10 +297,10 @@
 <section class="band" aria-label="Algunos platillos del menú">
     <div class="band__track" id="bandTrack" aria-hidden="true">
         <div class="band__group">
-            <span>Milanesas</span><span class="o">Tacos dorados</span><span>Mole rojo</span><span class="o">Costilla verde y roja</span>
+            <span>Milanesas</span><span class="o">Tacos dorados</span><span>Mole rojo</span><span class="o">Puerco en salsa verde</span>
             <span>Enchiladas</span><span class="o">Chiles rellenos</span><span>Pescado frito</span><span class="o">Caldo de res</span>
-            <span>Menudo</span><span class="o">Birria de res</span><span>Quesabirrias</span><span class="o">Barbacoa</span>
-            <span>Bistec ranchero</span><span class="o">Cecina asada</span><span>Chilaquiles</span><span class="o">Hotcakes</span>
+            <span>Menudo</span><span class="o">Birria de res</span><span>Quesabirrias</span><span class="o">Camarones mariposa</span>
+            <span>Bistec ranchero</span><span class="o">Cecina frita</span><span>Chilaquiles</span><span class="o">Hotcakes</span>
         </div>
     </div>
 </section>
@@ -311,14 +345,15 @@
     <div class="wrap">
         <header class="sec-head" data-reveal>
             <h2 id="menu-t" data-split>El menú de la casa</h2>
-            <p>Toca el + en lo que se te antoje y te armamos el mensaje para WhatsApp.</p>
+            <p>Toca el + en lo que se te antoje y te armamos el mensaje para WhatsApp. Precios en pesos mexicanos.</p>
         </header>
 
         <div class="tabs" id="tabs" role="tablist" aria-label="Categorías del menú" data-reveal>
             <button class="tab is-active" role="tab" id="tab-platillos" aria-selected="true" aria-controls="panel-platillos" data-cat="platillos" type="button">Platillos</button>
             <button class="tab" role="tab" id="tab-caldos" aria-selected="false" aria-controls="panel-caldos" data-cat="caldos" tabindex="-1" type="button">Caldos</button>
-            <button class="tab" role="tab" id="tab-casa" aria-selected="false" aria-controls="panel-casa" data-cat="casa" tabindex="-1" type="button">De la casa</button>
+            <button class="tab" role="tab" id="tab-mariscos" aria-selected="false" aria-controls="panel-mariscos" data-cat="mariscos" tabindex="-1" type="button">Mariscos</button>
             <button class="tab" role="tab" id="tab-desayunos" aria-selected="false" aria-controls="panel-desayunos" data-cat="desayunos" tabindex="-1" type="button">Desayunos</button>
+            <button class="tab" role="tab" id="tab-bebidas" aria-selected="false" aria-controls="panel-bebidas" data-cat="bebidas" tabindex="-1" type="button">Bebidas</button>
             <span class="tabs__ink" aria-hidden="true"></span>
         </div>
 
@@ -327,99 +362,139 @@
                 <div class="preview__stack" id="previewStack">
                     <img class="is-active" src="img/web/milanesa-plato.jpg" width="1000" height="1248" alt="Milanesas empanizadas con arroz y papas" data-key="platillos" loading="lazy">
                 </div>
-                <figcaption class="preview__cap"><span id="previewCap">Guisados y antojitos</span></figcaption>
+                <figcaption class="preview__cap"><span id="previewCap">Guisados con sazón de casa</span></figcaption>
             </figure>
 
             <div class="menu__lists">
                 <!-- PLATILLOS -->
-                <ul class="dishes is-active" role="tabpanel" id="panel-platillos" aria-labelledby="tab-platillos" data-cat="platillos" data-default-photo="img/web/milanesa-plato.jpg" data-default-cap="Guisados y antojitos">
-                    <li class="dish" data-name="Milanesas de res y pollo" data-photo="img/web/milanesa-wide.jpg">
-                        <img class="dish__thumb" src="img/web/menu/milanesas.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Milanesas de res y pollo</h3><p>Empanizadas y doraditas, con papas, arroz y ensalada.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Milanesas de res y pollo a mi antojo"><span></span></button>
+                <ul class="dishes is-active" role="tabpanel" id="panel-platillos" aria-labelledby="tab-platillos" data-cat="platillos" data-default-photo="img/web/milanesa-plato.jpg" data-default-cap="Guisados con sazón de casa">
+                    <li class="dish" data-name="Guacamole con totopos">
+                        <img class="dish__thumb" src="img/web/menu/guacamole.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Guacamole con totopos</h3><b class="dish__price">$100</b></div><p>Aperitivo para empezar.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Guacamole con totopos a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Tacos dorados">
+                    <li class="dish" data-name="Quesabirrias">
+                        <img class="dish__thumb" src="img/web/menu/quesabirrias.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Quesabirrias</h3><b class="dish__price">$120</b></div><p>Tacos dorados rellenos de queso y birria.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Quesabirrias a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Milanesa empanizada" data-photo="img/web/milanesa-wide.jpg">
+                        <img class="dish__thumb" src="img/web/menu/milanesas.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Milanesa empanizada</h3><b class="dish__price">$170</b></div><p>De pollo o de res, con papas, arroz y ensalada.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Milanesa empanizada a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Sopes de asada o pollo">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Sopes de asada o pollo</h3><b class="dish__price">$50<small> c/u</small></b></div><p>De asada o de pollo. El precio es por pieza.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Sopes de asada o pollo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Quesadillas">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Quesadillas</h3><b class="dish__price">$120</b></div><p>De pollo o de res.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Quesadillas a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Huarache">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Huarache</h3><b class="dish__price">$120</b></div><p>También torta a tu elección.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huarache a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Tacos dorados con consomé">
                         <img class="dish__thumb" src="img/web/menu/tacos-dorados.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Tacos dorados</h3><p>Crujientes, con crema, queso y lechuga.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Tacos dorados a mi antojo"><span></span></button>
+                        <div class="dish__txt"><div class="dish__head"><h3>Tacos dorados con consomé</h3><b class="dish__price">$160</b></div><p>Crujientes, acompañados de su consomé.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Tacos dorados con consomé a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Mole rojo">
                         <img class="dish__thumb" src="img/web/menu/mole-rojo.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Mole rojo</h3><p>Mole espeso y profundo, servido con arroz.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Mole rojo</h3><b class="dish__price">$160</b></div><p>Mole espeso y profundo, servido con arroz.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Mole rojo a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Costilla de puerco verde y roja" data-photo="img/web/costilla-verde.jpg">
+                    <li class="dish" data-name="Carne de puerco en salsa verde o roja" data-photo="img/web/costilla-verde.jpg">
                         <img class="dish__thumb" src="img/web/menu/costilla.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Costilla de puerco verde y roja</h3><p>Guisada en salsa verde o roja, con arroz y frijoles.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Costilla de puerco verde y roja a mi antojo"><span></span></button>
+                        <div class="dish__txt"><div class="dish__head"><h3>Carne de puerco en salsa verde o roja</h3><b class="dish__price">$160</b></div><p>Guisada en salsa verde o roja, con arroz y frijoles.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Carne de puerco en salsa verde o roja a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Enchiladas verdes y rojas" data-photo="img/web/enchiladas-rojas.jpg">
+                    <li class="dish" data-name="Enchiladas verdes o rojas de pollo" data-photo="img/web/enchiladas-rojas.jpg">
                         <img class="dish__thumb" src="img/web/menu/enchiladas.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Enchiladas verdes y rojas</h3><p>Bañadas en salsa verde o roja, con crema y queso.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Enchiladas verdes y rojas a mi antojo"><span></span></button>
+                        <div class="dish__txt"><div class="dish__head"><h3>Enchiladas verdes o rojas de pollo</h3><b class="dish__price">$150</b></div><p>5 piezas bañadas en salsa verde o roja, con crema y queso.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Enchiladas verdes o rojas de pollo a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Chiles rellenos">
                         <img class="dish__thumb" src="img/web/menu/chiles-rellenos.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Chiles rellenos</h3><p>Capeados y rellenos, con arroz y frijoles.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Chiles rellenos</h3><b class="dish__price">$160</b></div><p>Capeados y rellenos, con arroz y frijoles.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chiles rellenos a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Pescado frito" data-photo="img/web/pescado-plato.jpg">
-                        <img class="dish__thumb" src="img/web/menu/pescado.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Pescado frito</h3><p>Entero y dorado, con ensalada, arroz y frijoles.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Pescado frito a mi antojo"><span></span></button>
+                    <li class="dish" data-name="Bistec ranchero">
+                        <img class="dish__thumb" src="img/web/menu/bistec-ranchero.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Bistec ranchero</h3><b class="dish__price">$150</b></div><p>Bistec guisado con papa y salsa ranchera.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Bistec ranchero a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Fajitas de pollo o de carne">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Fajitas de pollo o de carne</h3><b class="dish__price">$170</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Fajitas de pollo o de carne a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Cecina frita" data-photo="img/web/bistec.jpg">
+                        <img class="dish__thumb" src="img/web/menu/cecina.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Cecina frita</h3><b class="dish__price">$180</b></div><p>Con su guarnición.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Cecina frita a mi antojo"><span></span></button>
                     </li>
                 </ul>
 
                 <!-- CALDOS -->
                 <ul class="dishes" role="tabpanel" id="panel-caldos" aria-labelledby="tab-caldos" data-cat="caldos" data-default-photo="img/web/caldo-res.jpg" data-default-cap="Calientitos y reconfortantes" hidden>
-                    <li class="dish" data-name="Caldo de res" data-photo="img/web/caldo-res.jpg">
-                        <img class="dish__thumb" src="img/web/menu/caldo-res.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Caldo de res</h3><p>Con verduras, elote y hueso, bien caliente.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de res a mi antojo"><span></span></button>
-                    </li>
                     <li class="dish" data-name="Caldo de pollo" data-photo="img/web/caldo-pollo.jpg">
                         <img class="dish__thumb" src="img/web/menu/caldo-pollo.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Caldo de pollo</h3><p>Con pieza de pollo, elote y verduras frescas.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Caldo de pollo</h3><b class="dish__price">$150</b></div><p>Con pieza de pollo, elote y verduras frescas.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de pollo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Caldo de res" data-photo="img/web/caldo-res.jpg">
+                        <img class="dish__thumb" src="img/web/menu/caldo-res.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Caldo de res</h3><b class="dish__price">$170</b></div><p>Rojo o blanco, con verduras y elote, bien caliente.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de res a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Caldo de camarón">
                         <img class="dish__thumb" src="img/web/menu/caldo-camaron.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Caldo de camarón</h3><p>Rojo y sabroso, con camarones, cebolla y cilantro.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Caldo de camarón</h3><b class="dish__price">$200</b></div><p>Rojo y sabroso, con camarones, cebolla y cilantro.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de camarón a mi antojo"><span></span></button>
-                    </li>
-                </ul>
-
-                <!-- DE LA CASA -->
-                <ul class="dishes" role="tabpanel" id="panel-casa" aria-labelledby="tab-casa" data-cat="casa" data-default-photo="img/web/menudo.jpg" data-default-cap="Los antojos fuertes" hidden>
-                    <li class="dish" data-name="Menudo" data-photo="img/web/menudo.jpg">
-                        <img class="dish__thumb" src="img/web/menu/menudo.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Menudo</h3><p>Rojo y humeante, con cebolla, chile y limón.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Menudo a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Birria de res">
                         <img class="dish__thumb" src="img/web/menu/birria.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Birria de res</h3><p>Carne de res en su caldo, con cebolla y limón.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Birria de res</h3><b class="dish__price">$170</b></div><p>Carne de res en su caldo, con cebolla y limón.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Birria de res a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Quesabirrias">
-                        <img class="dish__thumb" src="img/web/menu/quesabirrias.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Quesabirrias</h3><p>Tacos dorados rellenos de queso y birria.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Quesabirrias a mi antojo"><span></span></button>
+                    <li class="dish" data-name="Menudo" data-photo="img/web/menudo.jpg">
+                        <img class="dish__thumb" src="img/web/menu/menudo.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Menudo</h3><b class="dish__price">$160</b></div><p>Rojo y humeante, con cebolla, chile y limón.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Menudo a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Barbacoa">
-                        <img class="dish__thumb" src="img/web/menu/barbacoa.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Barbacoa</h3><p>Carne sazonada y jugosa, lista para tortilla.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Barbacoa a mi antojo"><span></span></button>
+                </ul>
+
+                <!-- MARISCOS -->
+                <ul class="dishes" role="tabpanel" id="panel-mariscos" aria-labelledby="tab-mariscos" data-cat="mariscos" data-default-photo="img/web/empanizados.jpg" data-default-cap="Camarones y pescado" hidden>
+                    <li class="dish" data-name="Camarones mariposa al ajo">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Camarones mariposa al ajo</h3><b class="dish__price">$220</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Camarones mariposa al ajo a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Bistec ranchero">
-                        <img class="dish__thumb" src="img/web/menu/bistec-ranchero.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Bistec ranchero</h3><p>Bistec guisado con papa y salsa ranchera.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Bistec ranchero a mi antojo"><span></span></button>
+                    <li class="dish" data-name="Camarones mariposa empanizados" data-photo="img/web/empanizados.jpg">
+                        <img class="dish__thumb" src="img/web/menu/camarones.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Camarones mariposa empanizados</h3><b class="dish__price">$240</b></div><p>Empanizados y dorados, con arroz, frijoles y ensalada.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Camarones mariposa empanizados a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Cecina asada" data-photo="img/web/bistec.jpg">
-                        <img class="dish__thumb" src="img/web/menu/cecina.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Cecina asada</h3><p>Cecina a la parrilla con su guarnición.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Cecina asada a mi antojo"><span></span></button>
+                    <li class="dish" data-name="Pescado frito" data-photo="img/web/pescado-plato.jpg">
+                        <img class="dish__thumb" src="img/web/menu/pescado.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Pescado frito</h3><b class="dish__price">$200</b></div><p>Entero y dorado, con ensalada, arroz y frijoles.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Pescado frito a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Pescado filete">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Pescado filete</h3><b class="dish__price">$210</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Pescado filete a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Pescado a la diabla">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Pescado a la diabla</h3><b class="dish__price">$200</b></div><p>En salsa a la diabla, con su toque picante.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Pescado a la diabla a mi antojo"><span></span></button>
                     </li>
                 </ul>
 
@@ -427,28 +502,115 @@
                 <ul class="dishes" role="tabpanel" id="panel-desayunos" aria-labelledby="tab-desayunos" data-cat="desayunos" data-default-photo="img/web/huevos-jamon.jpg" data-default-cap="Para empezar bien el día" hidden>
                     <li class="dish" data-name="Huevos al gusto" data-photo="img/web/huevos-chorizo.jpg">
                         <img class="dish__thumb" src="img/web/menu/huevos-gusto.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Huevos al gusto</h3><p>Con jamón, chorizo o como los prefieras.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Huevos al gusto</h3><b class="dish__price">$130</b></div><p>Con salchicha, jamón, chorizo, tocino o a la mexicana (1 ingrediente). Ingrediente adicional: $15.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos al gusto a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Huevos rancheros">
-                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
-                        <div class="dish__txt"><h3>Huevos rancheros</h3><p>Huevos estrellados con salsa ranchera.</p></div>
+                        <img class="dish__thumb" src="img/web/menu/huevos-rancheros.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Huevos rancheros</h3><b class="dish__price">$150</b></div><p>3 piezas, estrellados con salsa ranchera.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos rancheros a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Chilaquiles verdes y rojos">
+                    <li class="dish" data-name="Huevos con tocino">
                         <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
-                        <div class="dish__txt"><h3>Chilaquiles verdes y rojos</h3><p>Crujientes, en salsa verde o roja.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chilaquiles verdes y rojos a mi antojo"><span></span></button>
+                        <div class="dish__txt"><div class="dish__head"><h3>Huevos con tocino</h3><b class="dish__price">$130</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos con tocino a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Huevos con chorizo" data-photo="img/web/huevos-chorizo.jpg">
+                        <img class="dish__thumb" src="img/web/menu/huevos-chorizo.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Huevos con chorizo</h3><b class="dish__price">$130</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos con chorizo a mi antojo"><span></span></button>
                     </li>
                     <li class="dish" data-name="Omelet">
                         <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
-                        <div class="dish__txt"><h3>Omelet</h3><p>Esponjoso y recién hecho.</p></div>
+                        <div class="dish__txt"><div class="dish__head"><h3>Omelet</h3><b class="dish__price">$140</b></div><p>Incluye un ingrediente: salchicha, jamón, chorizo, tocino o espinaca. Adicional: $15.</p></div>
                         <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Omelet a mi antojo"><span></span></button>
                     </li>
-                    <li class="dish" data-name="Hotcakes">
+                    <li class="dish" data-name="Chilaquiles con huevo">
+                        <img class="dish__thumb" src="img/web/menu/chilaquiles.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><div class="dish__head"><h3>Chilaquiles con huevo</h3><b class="dish__price">$130</b></div><p>Rojos o verdes, con huevo.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chilaquiles con huevo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Chilaquiles con carne asada o pollo">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Chilaquiles con carne asada o pollo</h3><b class="dish__price">$150</b></div><p>Rojos o verdes.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chilaquiles con carne asada o pollo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Chilaquiles con cecina">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Chilaquiles con cecina</h3><b class="dish__price">$180</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chilaquiles con cecina a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Hotcakes con fruta de la estación">
                         <img class="dish__thumb" src="img/web/menu/hotcakes.jpg" width="240" height="240" alt="" loading="lazy">
-                        <div class="dish__txt"><h3>Hotcakes</h3><p>Esponjosos, para empezar con algo dulce.</p></div>
-                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Hotcakes a mi antojo"><span></span></button>
+                        <div class="dish__txt"><div class="dish__head"><h3>Hotcakes con fruta de la estación</h3><b class="dish__price">$140</b></div><p>Esponjosos, para empezar con algo dulce.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Hotcakes con fruta de la estación a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Quesadilla con carne">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Quesadilla con carne</h3><b class="dish__price">$150</b></div><p>3 piezas, rellenas de carne.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Quesadilla con carne a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Sincronizadas">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Sincronizadas</h3><b class="dish__price">$115</b></div><p>3 piezas.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Sincronizadas a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Burritos con machaca">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><div class="dish__head"><h3>Burritos con machaca</h3><b class="dish__price">$120</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Burritos con machaca a mi antojo"><span></span></button>
+                    </li>
+                </ul>
+
+                <!-- BEBIDAS -->
+                <ul class="dishes dishes--plain" role="tabpanel" id="panel-bebidas" aria-labelledby="tab-bebidas" data-cat="bebidas" data-default-photo="img/web/enchiladas-rojas.jpg" data-default-cap="Para acompañar tu comida" hidden>
+                    <li class="dish" data-name="Jugo de naranja">
+                        <div class="dish__txt"><div class="dish__head"><h3>Jugo de naranja</h3><b class="dish__price"><small>desde </small>$50</b></div><div class="dish__sizes"><span>Chico <b>$50</b></span><span>Mediano <b>$75</b></span><span>Grande <b>$100</b></span></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Jugo de naranja a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Licuado de plátano">
+                        <div class="dish__txt"><div class="dish__head"><h3>Licuado de plátano</h3><b class="dish__price">$70</b></div><p>Con miel de abeja natural.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Licuado de plátano a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Licuado de granola">
+                        <div class="dish__txt"><div class="dish__head"><h3>Licuado de granola</h3><b class="dish__price">$80</b></div><p>Avena, miel y frutos rojos.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Licuado de granola a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Chocomil con plátano">
+                        <div class="dish__txt"><div class="dish__head"><h3>Chocomil con plátano</h3><b class="dish__price">$80</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chocomil con plátano a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Taza de café">
+                        <div class="dish__txt"><div class="dish__head"><h3>Taza de café</h3><b class="dish__price">$35</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Taza de café a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Agua de jamaica">
+                        <div class="dish__txt"><div class="dish__head"><h3>Agua de jamaica</h3><b class="dish__price">$50</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Agua de jamaica a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Agua de horchata">
+                        <div class="dish__txt"><div class="dish__head"><h3>Agua de horchata</h3><b class="dish__price">$60</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Agua de horchata a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Té caliente o helado">
+                        <div class="dish__txt"><div class="dish__head"><h3>Té caliente o helado</h3></div><p>Pregunta por el precio.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Té caliente o helado a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Refresco">
+                        <div class="dish__txt"><div class="dish__head"><h3>Refresco</h3><b class="dish__price">$40</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Refresco a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Coca-Cola">
+                        <div class="dish__txt"><div class="dish__head"><h3>Coca-Cola</h3><b class="dish__price">$40</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Coca-Cola a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Limonada o naranjada natural">
+                        <div class="dish__txt"><div class="dish__head"><h3>Limonada o naranjada natural</h3><b class="dish__price"><small>desde </small>$50</b></div><div class="dish__sizes"><span>Chico <b>$50</b></span><span>Media <b>$65</b></span><span>Grande <b>$100</b></span></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Limonada o naranjada natural a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Limonada o naranjada mineral">
+                        <div class="dish__txt"><div class="dish__head"><h3>Limonada o naranjada mineral</h3><b class="dish__price">$50</b></div></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Limonada o naranjada mineral a mi antojo"><span></span></button>
                     </li>
                 </ul>
             </div>
@@ -461,9 +623,19 @@
                     <span class="btn__label" id="menuSendLabel">Dime qué hay hoy</span>
                     <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
                 </a>
-                <button class="btn btn--ghost btn--lg" type="button" data-lightbox-src="img/web/carta-original.jpg" data-lightbox-caption="Carta original de Señor Chris">
+                <button class="btn btn--ghost btn--lg" type="button" data-lightbox-src="img/web/menu-pagina-1.jpg|img/web/menu-pagina-2.jpg" data-lightbox-caption="Menú de Señor Chris, página 1 de 2|Menú de Señor Chris, página 2 de 2">
                     <span class="btn__label">Ver la carta original</span>
                 </button>
+            </div>
+            <div class="menu-qr" id="menuQr" hidden>
+                <img class="menu-qr__code" src="img/web/qr-menu.png" width="440" height="440" alt="Código QR para abrir el menú de Señor Chris en PDF" loading="lazy">
+                <div class="menu-qr__txt">
+                    <h3>Llévate el menú en tu celular</h3>
+                    <p><span class="menu-qr__scan">Escanea el código o abre el menú completo en PDF.</span><span class="menu-qr__open">Abre el menú completo en PDF.</span></p>
+                    <a class="btn btn--ghost btn--sm" id="menuPdf" href="#menu" target="_blank" rel="noopener">
+                        <span class="btn__label">Abrir menú en PDF</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

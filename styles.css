@@ -725,6 +725,16 @@ button { font: inherit; color: inherit; }
     margin: -6px 0 0 -6px; transform: rotate(45deg); background: var(--gold-400); opacity: .8;
 }
 .dish__txt h3 { font: 600 1.1rem/1.2 var(--font-display); letter-spacing: -.005em; }
+.dish__head { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.dish__price {
+    flex: none; font: 700 1.08rem/1.2 var(--font-display); letter-spacing: -.005em; color: var(--gold-300);
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.dish__price small { font: 500 .74rem/1 var(--font-body); letter-spacing: 0; color: var(--faint); }
+.dish__sizes { display: flex; flex-wrap: wrap; gap: 2px 16px; margin-top: 6px; }
+.dish__sizes span { color: var(--muted); font-size: .9rem; }
+.dish__sizes b { margin-left: 3px; color: var(--gold-300); font: 700 .95rem/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.dishes--plain .dish { grid-template-columns: minmax(0, 1fr) 46px; }
 .dish__txt p { margin-top: 4px; color: var(--faint); font-size: .92rem; line-height: 1.4; }
 .dish.is-added { background: linear-gradient(90deg, rgba(247, 217, 143, .1), transparent 85%); }
 .dish.is-added::before {
@@ -762,6 +772,25 @@ button { font: inherit; color: inherit; }
 .menu__foot { display: grid; gap: 18px; justify-items: center; text-align: center; margin-top: clamp(40px, 7vw, 80px); }
 .menu__foot p { color: var(--muted); font-size: 1.1rem; }
 .menu__foot-cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+/* QR del menú en PDF (el código solo se muestra donde se puede escanear con otro dispositivo) */
+.menu-qr {
+    display: flex; align-items: center; justify-content: center; gap: 22px; max-width: 520px; margin-top: 10px;
+    padding: 18px 22px; border-radius: var(--r-lg); border: 1px solid var(--line); background: rgba(255, 240, 204, .04);
+    text-align: left;
+}
+.menu-qr[hidden] { display: none; }
+.menu-qr__code { flex: none; width: 132px; height: 132px; border-radius: var(--r-sm); background: #fff; }
+.menu-qr__txt { display: grid; gap: 6px; justify-items: start; }
+.menu-qr__txt h3 { font: 600 1.15rem/1.2 var(--font-display); }
+.menu-qr__txt p { margin: 0 0 8px; font-size: .95rem; color: var(--muted); }
+.menu-qr__open { display: none; }
+@media (max-width: 639px) {
+    .menu-qr { flex-direction: column; text-align: center; padding: 20px; }
+    .menu-qr__code, .menu-qr__scan { display: none; }
+    .menu-qr__open { display: inline; }
+    .menu-qr__txt { justify-items: center; }
+}
 
 @media (min-width: 960px) {
     .menu__grid { grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); gap: clamp(36px, 5vw, 72px); align-items: start; }

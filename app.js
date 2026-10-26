@@ -13,8 +13,8 @@
        Todo lo que quede vacío ("") se oculta o usa un texto alterno.
        ─────────────────────────────────────────────────────────────────────── */
     const CONFIG = {
-        whatsapp: '520000000000',      // TODO: número con lada de país, sin "+" ni espacios (ej. 5217771234567)
-        whatsappDisplay: '',           // Cómo se muestra en pantalla (ej. '+52 777 123 4567')
+        whatsapp: '526241613429',      // Número con lada de país, sin "+" ni espacios (tomado del menú del cliente: Tel 624 161 3429)
+        whatsappDisplay: '624 161 3429', // Cómo se muestra en pantalla
         address: '',                   // Dirección completa del local
         hours: '',                     // Ej. 'Lunes a domingo, 8:00 am a 5:00 pm'
         mapsUrl: '',                   // Enlace de Google Maps para el botón "Ver en el mapa"
@@ -22,6 +22,7 @@
         instagram: '',                 // URL completa del perfil
         facebook: '',
         tiktok: '',
+        menuPdf: 'https://drive.google.com/file/d/1Eu9ns4Cs8jMWvxc5fQqeP1BocggYmRhF/view?usp=sharing', // Menú en PDF (el mismo enlace del QR). Vacío = se oculta el bloque del QR
         greeting: 'Hola Señor Chris'
     };
 
@@ -123,6 +124,9 @@
             if (url) { a.href = url; a.hidden = false; anySocial = true; }
         });
         if (anySocial) $('#social').hidden = false;
+
+        const menuQr = $('#menuQr'), menuPdf = $('#menuPdf');
+        if (menuQr && menuPdf && CONFIG.menuPdf) { menuPdf.href = CONFIG.menuPdf; menuQr.hidden = false; }
 
         const year = $('#year');
         if (year) year.textContent = new Date().getFullYear();
@@ -850,9 +854,14 @@
                 else if (e.key === 'ArrowRight') this.step(1);
                 else if (e.key === 'Tab') this.trap(e);
             });
-            // Botones sueltos (carta original)
+            // Botones sueltos (carta original). Varias páginas se separan con "|" en src y en caption
             $$('[data-lightbox-src]').forEach(b => b.addEventListener('click', () => {
-                this.open([{ src: b.dataset.lightboxSrc, caption: b.dataset.lightboxCaption || '', alt: b.dataset.lightboxCaption || '', cta: false }], 0, b);
+                const caps = (b.dataset.lightboxCaption || '').split('|');
+                const list = b.dataset.lightboxSrc.split('|').map((src, i) => {
+                    const caption = caps[i] || caps[0] || '';
+                    return { src, caption, alt: caption, cta: false };
+                });
+                this.open(list, 0, b);
             }));
         },
         fill(item) {
