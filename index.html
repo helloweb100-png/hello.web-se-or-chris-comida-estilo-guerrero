@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- ═════════ SEO ═════════ -->
+    <title>Señor Chris | Comida Estilo Guerrero con Tortillas Hechas a Mano</title>
+    <meta name="description" content="Señor Chris: comida estilo Guerrero con tortillas hechas a mano. Menudo, birria, caldos, mole rojo, milanesas, enchiladas y desayunos. Arma tu antojo y pide por WhatsApp.">
+    <meta name="keywords" content="comida estilo Guerrero, tortillas hechas a mano, menudo, birria de res, quesabirrias, caldo de res, mole rojo, milanesas, enchiladas, desayunos, comida mexicana, Señor Chris">
+    <meta name="author" content="Señor Chris">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0C0605">
+    <meta name="color-scheme" content="dark">
+    <!-- TODO: reemplazar https://www.tu-dominio.com por el dominio real al publicar -->
+    <link rel="canonical" href="https://www.tu-dominio.com/">
+
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Señor Chris">
+    <meta property="og:title" content="Señor Chris | Comida Estilo Guerrero">
+    <meta property="og:description" content="Tortillas hechas a mano, caldos que abrazan y guisados con sazón de casa. Arma tu antojo y pide por WhatsApp.">
+    <meta property="og:url" content="https://www.tu-dominio.com/">
+    <meta property="og:image" content="https://www.tu-dominio.com/img/web/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de Señor Chris, comida estilo Guerrero">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Señor Chris | Comida Estilo Guerrero">
+    <meta name="twitter:description" content="Tortillas hechas a mano, caldos que abrazan y guisados con sazón de casa.">
+    <meta name="twitter:image" content="https://www.tu-dominio.com/img/web/og-cover.jpg">
+
+    <link rel="icon" href="img/web/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/web/apple-touch-icon.png">
+
+    <!-- ═════════ Recursos ═════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="preload" as="image" href="img/web/logo.webp" type="image/webp">
+    <link rel="preload" as="image" href="img/web/menudo.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Marca la página como "con JavaScript" antes de pintar: evita parpadeos y permite degradar sin JS -->
+    <script>document.documentElement.classList.add('js', 'is-loading');</script>
+    <noscript><style>.loader{display:none!important}.js .reveal,.js [data-split] .wi{opacity:1!important;transform:none!important}html.is-loading{overflow:auto!important}</style></noscript>
+
+    <!-- ═════════ Datos estructurados (Google) ═════════
+         TODO: al tener los datos reales, agregar "telephone", "address" y "openingHours" -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Señor Chris",
+      "alternateName": "Señor Chris Comida Estilo Guerrero",
+      "description": "Comida estilo Guerrero con tortillas hechas a mano: caldos, menudo, birria, guisados y desayunos.",
+      "url": "https://www.tu-dominio.com/",
+      "image": "https://www.tu-dominio.com/img/web/og-cover.jpg",
+      "logo": "https://www.tu-dominio.com/img/web/favicon.png",
+      "servesCuisine": ["Mexicana", "Comida estilo Guerrero"],
+      "slogan": "Tortillas hechas a mano",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Menú Señor Chris",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Platillos",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Milanesas de res y pollo"},
+              {"@type": "MenuItem", "name": "Tacos dorados"},
+              {"@type": "MenuItem", "name": "Mole rojo"},
+              {"@type": "MenuItem", "name": "Costilla de puerco verde y roja"},
+              {"@type": "MenuItem", "name": "Enchiladas verdes y rojas"},
+              {"@type": "MenuItem", "name": "Chiles rellenos"},
+              {"@type": "MenuItem", "name": "Pescado frito"}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Caldos",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Caldo de res"},
+              {"@type": "MenuItem", "name": "Caldo de pollo"},
+              {"@type": "MenuItem", "name": "Caldo de camarón"}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "De la casa",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Menudo"},
+              {"@type": "MenuItem", "name": "Birria de res"},
+              {"@type": "MenuItem", "name": "Quesabirrias"},
+              {"@type": "MenuItem", "name": "Barbacoa"},
+              {"@type": "MenuItem", "name": "Bistec ranchero"},
+              {"@type": "MenuItem", "name": "Cecina asada"}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Desayunos",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Huevos al gusto"},
+              {"@type": "MenuItem", "name": "Huevos rancheros"},
+              {"@type": "MenuItem", "name": "Chilaquiles verdes y rojos"},
+              {"@type": "MenuItem", "name": "Omelet"},
+              {"@type": "MenuItem", "name": "Hotcakes"}
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+<!-- Íconos de marca (Simple Icons) reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+        <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+        <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+        <symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+        <symbol id="i-tt" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+    </defs>
+</svg>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════════════ PRELOADER ═══════════════════════ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Señor Chris">
+    <div class="loader__glow" aria-hidden="true"></div>
+    <div class="loader__stage">
+        <img class="loader__logo" src="img/web/logo.webp" width="827" height="345" alt="Señor Chris, comida estilo Guerrero">
+        <div class="loader__dial" aria-hidden="true">
+            <span class="loader__ticks"></span>
+            <span class="loader__arc"></span>
+            <span class="loader__arc loader__arc--b"></span>
+            <span class="loader__core"><b id="loaderPct">0</b><i>%</i></span>
+        </div>
+        <p class="loader__msg" id="loaderMsg">Encendiendo el comal</p>
+    </div>
+    <div class="loader__curtain loader__curtain--t" aria-hidden="true"></div>
+    <div class="loader__curtain loader__curtain--b" aria-hidden="true"></div>
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ═══════════════════════ NAVEGACIÓN ═══════════════════════ -->
+<header class="nav" id="nav">
+    <div class="nav__bar">
+        <a class="nav__brand" href="#inicio" aria-label="Señor Chris, ir al inicio">
+            <img src="img/web/logo-lockup.webp" width="400" height="179" alt="Señor Chris">
+        </a>
+        <nav class="nav__links" aria-label="Principal">
+            <a href="#menu">Menú</a>
+            <a href="#sazon">Sazón</a>
+            <a href="#galeria">Galería</a>
+            <a href="#pedir">Cómo pedir</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a class="btn btn--primary btn--sm nav__cta" data-wa data-msg="Hola Señor Chris, ya tengo hambre. Quiero hacer un pedido." href="#contacto">
+            <span class="btn__label">Ya tengo hambre</span>
+            <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+        </a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMobile">
+            <span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<div class="mmenu" id="menuMobile" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden>
+    <nav class="mmenu__nav" aria-label="Menú móvil">
+        <a href="#menu" style="--i:0"><small>01</small>Menú</a>
+        <a href="#sazon" style="--i:1"><small>02</small>Sazón</a>
+        <a href="#galeria" style="--i:2"><small>03</small>Galería</a>
+        <a href="#pedir" style="--i:3"><small>04</small>Cómo pedir</a>
+        <a href="#contacto" style="--i:4"><small>05</small>Contacto</a>
+    </nav>
+    <div class="mmenu__foot" style="--i:5">
+        <a class="btn btn--primary btn--block" data-wa data-msg="Hola Señor Chris, quiero hacer un pedido." href="#contacto">
+            <span class="btn__label">Quiero mi antojo</span>
+            <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+        </a>
+        <p>Comida estilo Guerrero<br>Tortillas hechas a mano</p>
+    </div>
+</div>
+
+<main id="contenido">
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+        <span class="hero__glow"></span>
+        <span class="hero__dial"></span>
+        <canvas class="embers" id="embersHero"></canvas>
+    </div>
+
+    <div class="wrap hero__grid">
+        <div class="hero__copy">
+            <p class="hero__eyebrow reveal-hero" style="--i:0">Comida estilo Guerrero</p>
+            <h1 class="hero__title" id="hero-title" data-split data-hero>Sabor de <span class="gold">Guerrero,</span> hecho a mano.</h1>
+            <p class="hero__sub reveal-hero" style="--i:5">Tortillas hechas a mano, caldos que abrazan y guisados con sazón de casa.</p>
+            <div class="hero__cta reveal-hero" style="--i:6">
+                <a class="btn btn--primary btn--lg" data-wa data-msg="Hola Señor Chris, se me antojó algo. Quiero hacer un pedido." href="#contacto">
+                    <span class="btn__label">Quiero mi antojo</span>
+                    <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <a class="btn btn--ghost btn--lg" href="#menu">
+                    <span class="btn__label">Ver el menú</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__visual reveal-hero" style="--i:3">
+            <div class="plate" id="plate">
+                <span class="plate__aura" aria-hidden="true"></span>
+                <svg class="plate__ring" viewBox="0 0 400 400" aria-hidden="true">
+                    <defs><path id="ringPath" d="M200,200 m-168,0 a168,168 0 1,1 336,0 a168,168 0 1,1 -336,0"/></defs>
+                    <text><textPath href="#ringPath" startOffset="0" textLength="1050" lengthAdjust="spacing">TORTILLAS HECHAS A MANO • COMIDA ESTILO GUERRERO • SAZÓN DE CASA • </textPath></text>
+                </svg>
+                <span class="plate__dial" aria-hidden="true"></span>
+
+                <div class="plate__orbit" aria-hidden="true">
+                    <span class="orb orb--1"><img src="img/web/menu/caldo-pollo.jpg" alt="" width="240" height="240" loading="eager"></span>
+                    <span class="orb orb--2"><img src="img/web/menu/enchiladas.jpg" alt="" width="240" height="240" loading="eager"></span>
+                    <span class="orb orb--3"><img src="img/web/menu/pescado.jpg" alt="" width="240" height="240" loading="eager"></span>
+                </div>
+
+                <div class="plate__disc" id="plateDisc">
+                    <figure class="slide is-active" data-name="Menudo">
+                        <img src="img/web/menudo.jpg" width="1000" height="1206" alt="Menudo rojo servido en cazuela de barro con cebolla y chile picado" fetchpriority="high">
+                    </figure>
+                    <figure class="slide" data-name="Milanesas">
+                        <img src="img/web/milanesa-plato.jpg" width="1000" height="1248" alt="Milanesas empanizadas con papas fritas, arroz y ensalada" loading="eager" fetchpriority="low">
+                    </figure>
+                    <figure class="slide" data-name="Enchiladas rojas">
+                        <img src="img/web/enchiladas-rojas.jpg" width="1100" height="825" alt="Enchiladas rojas con crema, queso y lechuga" loading="eager" fetchpriority="low">
+                    </figure>
+                    <figure class="slide" data-name="Camarones empanizados">
+                        <img src="img/web/empanizados.jpg" width="1000" height="1333" alt="Platillo empanizado con arroz, frijoles y ensalada" loading="eager" fetchpriority="low">
+                    </figure>
+                </div>
+
+                <div class="plate__label" aria-live="polite">
+                    <span class="plate__name" id="plateName">Menudo</span>
+                    <span class="plate__bars" id="plateBars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <span class="plate__stamp" aria-hidden="true">
+                    <svg viewBox="0 0 120 120"><defs><path id="stampPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#stampPath" textLength="276" lengthAdjust="spacing">HECHO A MANO • HECHO A MANO • </textPath></text></svg>
+                    <b>A mano</b>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ BANDA (único marquee) ═══════════════════════ -->
+<section class="band" aria-label="Algunos platillos del menú">
+    <div class="band__track" id="bandTrack" aria-hidden="true">
+        <div class="band__group">
+            <span>Milanesas</span><span class="o">Tacos dorados</span><span>Mole rojo</span><span class="o">Costilla verde y roja</span>
+            <span>Enchiladas</span><span class="o">Chiles rellenos</span><span>Pescado frito</span><span class="o">Caldo de res</span>
+            <span>Menudo</span><span class="o">Birria de res</span><span>Quesabirrias</span><span class="o">Barbacoa</span>
+            <span>Bistec ranchero</span><span class="o">Cecina asada</span><span>Chilaquiles</span><span class="o">Hotcakes</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ SAZÓN (manifiesto) ═══════════════════════ -->
+<section class="manifesto" id="sazon" aria-labelledby="sazon-t">
+    <div class="manifesto__sticky">
+        <div class="manifesto__float manifesto__float--a" data-speed="-60" aria-hidden="true"><img src="img/web/caldo-res.jpg" alt="" width="720" height="540" loading="lazy"></div>
+        <div class="manifesto__float manifesto__float--b" data-speed="80" aria-hidden="true"><img src="img/web/huevos-chorizo.jpg" alt="" width="610" height="345" loading="lazy"></div>
+        <div class="manifesto__float manifesto__float--c" data-speed="-90" aria-hidden="true"><img src="img/web/costilla-roja.jpg" alt="" width="580" height="605" loading="lazy"></div>
+
+        <div class="wrap wrap--narrow">
+            <h2 class="sr-only" id="sazon-t">La sazón de Guerrero</h2>
+            <p class="manifesto__text" id="manifestoText">En Guerrero la comida se hace sin prisa: el <em>comal caliente</em>, la masa amasada, la tortilla inflada <strong>a mano</strong> y el caldo hirviendo despacio. Eso es lo que llevamos a tu mesa: paciencia, fuego y <em>sazón de casa</em>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ IMAGEN QUE SE ABRE ═══════════════════════ -->
+<section class="expand" id="expand" aria-labelledby="expand-t">
+    <div class="expand__sticky">
+        <div class="expand__media" id="expandMedia">
+            <img src="img/web/milanesa-wide.jpg" width="1600" height="1204" alt="Milanesas empanizadas con papas fritas, arroz y ensalada de aguacate" loading="lazy">
+            <span class="expand__shade" aria-hidden="true"></span>
+        </div>
+        <div class="expand__intro" id="expandIntro" aria-hidden="true">
+            <span>Mira de cerca</span>
+        </div>
+        <div class="wrap expand__content" id="expandContent">
+            <h2 id="expand-t">Doradita por fuera, suave por dentro.</h2>
+            <p>Milanesas de res y pollo con papas, arroz y ensalada fresca. Un clásico que nunca falla.</p>
+            <a class="btn btn--primary btn--lg" data-wa data-msg="Hola Señor Chris, quiero pedir unas milanesas." href="#contacto">
+                <span class="btn__label">Quiero mi milanesa</span>
+                <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ MENÚ ═══════════════════════ -->
+<section class="menu" id="menu" aria-labelledby="menu-t">
+    <div class="wrap">
+        <header class="sec-head" data-reveal>
+            <h2 id="menu-t" data-split>El menú de la casa</h2>
+            <p>Toca el + en lo que se te antoje y te armamos el mensaje para WhatsApp.</p>
+        </header>
+
+        <div class="tabs" id="tabs" role="tablist" aria-label="Categorías del menú" data-reveal>
+            <button class="tab is-active" role="tab" id="tab-platillos" aria-selected="true" aria-controls="panel-platillos" data-cat="platillos" type="button">Platillos</button>
+            <button class="tab" role="tab" id="tab-caldos" aria-selected="false" aria-controls="panel-caldos" data-cat="caldos" tabindex="-1" type="button">Caldos</button>
+            <button class="tab" role="tab" id="tab-casa" aria-selected="false" aria-controls="panel-casa" data-cat="casa" tabindex="-1" type="button">De la casa</button>
+            <button class="tab" role="tab" id="tab-desayunos" aria-selected="false" aria-controls="panel-desayunos" data-cat="desayunos" tabindex="-1" type="button">Desayunos</button>
+            <span class="tabs__ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="menu__grid">
+            <figure class="preview" id="preview" data-reveal>
+                <div class="preview__stack" id="previewStack">
+                    <img class="is-active" src="img/web/milanesa-plato.jpg" width="1000" height="1248" alt="Milanesas empanizadas con arroz y papas" data-key="platillos" loading="lazy">
+                </div>
+                <figcaption class="preview__cap"><span id="previewCap">Guisados y antojitos</span></figcaption>
+            </figure>
+
+            <div class="menu__lists">
+                <!-- PLATILLOS -->
+                <ul class="dishes is-active" role="tabpanel" id="panel-platillos" aria-labelledby="tab-platillos" data-cat="platillos" data-default-photo="img/web/milanesa-plato.jpg" data-default-cap="Guisados y antojitos">
+                    <li class="dish" data-name="Milanesas de res y pollo" data-photo="img/web/milanesa-wide.jpg">
+                        <img class="dish__thumb" src="img/web/menu/milanesas.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Milanesas de res y pollo</h3><p>Empanizadas y doraditas, con papas, arroz y ensalada.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Milanesas de res y pollo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Tacos dorados">
+                        <img class="dish__thumb" src="img/web/menu/tacos-dorados.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Tacos dorados</h3><p>Crujientes, con crema, queso y lechuga.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Tacos dorados a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Mole rojo">
+                        <img class="dish__thumb" src="img/web/menu/mole-rojo.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Mole rojo</h3><p>Mole espeso y profundo, servido con arroz.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Mole rojo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Costilla de puerco verde y roja" data-photo="img/web/costilla-verde.jpg">
+                        <img class="dish__thumb" src="img/web/menu/costilla.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Costilla de puerco verde y roja</h3><p>Guisada en salsa verde o roja, con arroz y frijoles.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Costilla de puerco verde y roja a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Enchiladas verdes y rojas" data-photo="img/web/enchiladas-rojas.jpg">
+                        <img class="dish__thumb" src="img/web/menu/enchiladas.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Enchiladas verdes y rojas</h3><p>Bañadas en salsa verde o roja, con crema y queso.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Enchiladas verdes y rojas a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Chiles rellenos">
+                        <img class="dish__thumb" src="img/web/menu/chiles-rellenos.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Chiles rellenos</h3><p>Capeados y rellenos, con arroz y frijoles.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chiles rellenos a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Pescado frito" data-photo="img/web/pescado-plato.jpg">
+                        <img class="dish__thumb" src="img/web/menu/pescado.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Pescado frito</h3><p>Entero y dorado, con ensalada, arroz y frijoles.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Pescado frito a mi antojo"><span></span></button>
+                    </li>
+                </ul>
+
+                <!-- CALDOS -->
+                <ul class="dishes" role="tabpanel" id="panel-caldos" aria-labelledby="tab-caldos" data-cat="caldos" data-default-photo="img/web/caldo-res.jpg" data-default-cap="Calientitos y reconfortantes" hidden>
+                    <li class="dish" data-name="Caldo de res" data-photo="img/web/caldo-res.jpg">
+                        <img class="dish__thumb" src="img/web/menu/caldo-res.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Caldo de res</h3><p>Con verduras, elote y hueso, bien caliente.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de res a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Caldo de pollo" data-photo="img/web/caldo-pollo.jpg">
+                        <img class="dish__thumb" src="img/web/menu/caldo-pollo.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Caldo de pollo</h3><p>Con pieza de pollo, elote y verduras frescas.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de pollo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Caldo de camarón">
+                        <img class="dish__thumb" src="img/web/menu/caldo-camaron.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Caldo de camarón</h3><p>Rojo y sabroso, con camarones, cebolla y cilantro.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Caldo de camarón a mi antojo"><span></span></button>
+                    </li>
+                </ul>
+
+                <!-- DE LA CASA -->
+                <ul class="dishes" role="tabpanel" id="panel-casa" aria-labelledby="tab-casa" data-cat="casa" data-default-photo="img/web/menudo.jpg" data-default-cap="Los antojos fuertes" hidden>
+                    <li class="dish" data-name="Menudo" data-photo="img/web/menudo.jpg">
+                        <img class="dish__thumb" src="img/web/menu/menudo.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Menudo</h3><p>Rojo y humeante, con cebolla, chile y limón.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Menudo a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Birria de res">
+                        <img class="dish__thumb" src="img/web/menu/birria.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Birria de res</h3><p>Carne de res en su caldo, con cebolla y limón.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Birria de res a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Quesabirrias">
+                        <img class="dish__thumb" src="img/web/menu/quesabirrias.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Quesabirrias</h3><p>Tacos dorados rellenos de queso y birria.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Quesabirrias a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Barbacoa">
+                        <img class="dish__thumb" src="img/web/menu/barbacoa.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Barbacoa</h3><p>Carne sazonada y jugosa, lista para tortilla.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Barbacoa a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Bistec ranchero">
+                        <img class="dish__thumb" src="img/web/menu/bistec-ranchero.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Bistec ranchero</h3><p>Bistec guisado con papa y salsa ranchera.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Bistec ranchero a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Cecina asada" data-photo="img/web/bistec.jpg">
+                        <img class="dish__thumb" src="img/web/menu/cecina.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Cecina asada</h3><p>Cecina a la parrilla con su guarnición.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Cecina asada a mi antojo"><span></span></button>
+                    </li>
+                </ul>
+
+                <!-- DESAYUNOS -->
+                <ul class="dishes" role="tabpanel" id="panel-desayunos" aria-labelledby="tab-desayunos" data-cat="desayunos" data-default-photo="img/web/huevos-jamon.jpg" data-default-cap="Para empezar bien el día" hidden>
+                    <li class="dish" data-name="Huevos al gusto" data-photo="img/web/huevos-chorizo.jpg">
+                        <img class="dish__thumb" src="img/web/menu/huevos-gusto.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Huevos al gusto</h3><p>Con jamón, chorizo o como los prefieras.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos al gusto a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Huevos rancheros">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><h3>Huevos rancheros</h3><p>Huevos estrellados con salsa ranchera.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Huevos rancheros a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Chilaquiles verdes y rojos">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><h3>Chilaquiles verdes y rojos</h3><p>Crujientes, en salsa verde o roja.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Chilaquiles verdes y rojos a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Omelet">
+                        <span class="dish__thumb dish__thumb--empty" aria-hidden="true"></span>
+                        <div class="dish__txt"><h3>Omelet</h3><p>Esponjoso y recién hecho.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Omelet a mi antojo"><span></span></button>
+                    </li>
+                    <li class="dish" data-name="Hotcakes">
+                        <img class="dish__thumb" src="img/web/menu/hotcakes.jpg" width="240" height="240" alt="" loading="lazy">
+                        <div class="dish__txt"><h3>Hotcakes</h3><p>Esponjosos, para empezar con algo dulce.</p></div>
+                        <button class="dish__add" type="button" aria-pressed="false" aria-label="Agregar Hotcakes a mi antojo"><span></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu__foot" data-reveal>
+            <p id="menuHint">¿No te decides? Pregúntanos qué hay hoy.</p>
+            <div class="menu__foot-cta">
+                <a class="btn btn--primary btn--lg" id="menuSend" data-wa-dynamic data-wa data-msg="Hola Señor Chris, ¿qué tienen hoy en el menú?" href="#contacto">
+                    <span class="btn__label" id="menuSendLabel">Dime qué hay hoy</span>
+                    <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <button class="btn btn--ghost btn--lg" type="button" data-lightbox-src="img/web/carta-original.jpg" data-lightbox-caption="Carta original de Señor Chris">
+                    <span class="btn__label">Ver la carta original</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ GALERÍA (desplazamiento horizontal) ═══════════════════════ -->
+<section class="gallery" id="galeria" aria-labelledby="galeria-t">
+    <div class="gallery__pin">
+        <header class="gallery__head wrap">
+            <h2 id="galeria-t" data-split>Se antoja con solo verlo</h2>
+            <p class="gallery__hint">Toca una foto para verla en grande.</p>
+        </header>
+        <div class="gallery__track" id="galTrack">
+            <figure class="gcard gcard--p" data-gal data-caption="Menudo, rojo y humeante">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Menudo"><span class="gcard__img"><img src="img/web/menudo.jpg" width="1000" height="1206" alt="Menudo en cazuela de barro con cebolla y chile picado" loading="lazy"></span></button>
+                <figcaption>Menudo</figcaption>
+            </figure>
+            <figure class="gcard gcard--l" data-gal data-caption="Enchiladas rojas con crema y queso">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Enchiladas rojas"><span class="gcard__img"><img src="img/web/enchiladas-rojas.jpg" width="1100" height="825" alt="Enchiladas rojas con crema, queso y lechuga" loading="lazy"></span></button>
+                <figcaption>Enchiladas rojas</figcaption>
+            </figure>
+            <figure class="gcard gcard--p" data-gal data-caption="Pescado frito con ensalada, arroz y frijoles">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Pescado frito"><span class="gcard__img"><img src="img/web/pescado-plato.jpg" width="720" height="1280" alt="Pescado frito entero con ensalada, arroz y frijoles" loading="lazy"></span></button>
+                <figcaption>Pescado frito</figcaption>
+            </figure>
+            <figure class="gcard gcard--s" data-gal data-caption="Costilla de puerco en salsa roja">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Costilla en salsa roja"><span class="gcard__img"><img src="img/web/costilla-roja.jpg" width="580" height="605" alt="Costilla de puerco en salsa roja con arroz y frijoles" loading="lazy"></span></button>
+                <figcaption>Costilla en salsa roja</figcaption>
+            </figure>
+            <figure class="gcard gcard--p" data-gal data-caption="Plato empanizado con arroz, frijoles y ensalada">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Plato empanizado"><span class="gcard__img"><img src="img/web/empanizados.jpg" width="1000" height="1333" alt="Platillo empanizado con arroz, frijoles y ensalada fresca" loading="lazy"></span></button>
+                <figcaption>Empanizados</figcaption>
+            </figure>
+            <figure class="gcard gcard--l" data-gal data-caption="Caldo de res con verduras y elote">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Caldo de res"><span class="gcard__img"><img src="img/web/caldo-res.jpg" width="720" height="540" alt="Caldo de res con elote, calabacita y hueso" loading="lazy"></span></button>
+                <figcaption>Caldo de res</figcaption>
+            </figure>
+            <figure class="gcard gcard--p" data-gal data-caption="Cecina asada con cebolla, arroz y frijoles">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Cecina asada"><span class="gcard__img"><img src="img/web/bistec.jpg" width="720" height="1280" alt="Cecina asada con cebolla, arroz, frijoles y ensalada de aguacate" loading="lazy"></span></button>
+                <figcaption>Cecina asada</figcaption>
+            </figure>
+            <figure class="gcard gcard--l" data-gal data-caption="Caldo de pollo con elote y verduras">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Caldo de pollo"><span class="gcard__img"><img src="img/web/caldo-pollo.jpg" width="694" height="800" alt="Caldo de pollo con elote, calabacita y cilantro" loading="lazy"></span></button>
+                <figcaption>Caldo de pollo</figcaption>
+            </figure>
+            <figure class="gcard gcard--l" data-gal data-caption="Huevos con chorizo, frijoles y totopos">
+                <button class="gcard__btn" type="button" aria-label="Ver en grande: Huevos con chorizo"><span class="gcard__img"><img src="img/web/huevos-chorizo.jpg" width="610" height="345" alt="Huevos revueltos con chorizo, frijoles, queso y totopos" loading="lazy"></span></button>
+                <figcaption>Huevos con chorizo</figcaption>
+            </figure>
+            <div class="gcard gcard--end">
+                <p>¿Ya se te antojó?</p>
+                <a class="btn btn--primary btn--lg" data-wa data-msg="Hola Señor Chris, vi las fotos y se me antojó. Quiero pedir." href="#contacto">
+                    <span class="btn__label">Pide el tuyo ahora</span>
+                    <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ POR QUÉ SEÑOR CHRIS (bento) ═══════════════════════ -->
+<section class="why" id="casa" aria-labelledby="why-t">
+    <div class="wrap">
+        <header class="sec-head" data-reveal>
+            <h2 id="why-t" data-split>Una mesa con mucho que elegir</h2>
+        </header>
+        <div class="bento">
+            <article class="cell cell--a" data-reveal>
+                <img class="cell__bg" src="img/web/caldo-res.jpg" width="720" height="540" alt="Caldo de res con verduras y elote en plato de barro" loading="lazy">
+                <div class="cell__body">
+                    <p class="cell__num"><span data-count="3">3</span></p>
+                    <h3>caldos para cada antojo</h3>
+                    <p>Res, pollo y camarón, calientitos y con todo.</p>
+                </div>
+            </article>
+            <article class="cell cell--b" data-reveal>
+                <div class="cell__body">
+                    <p class="cell__num"><span data-count="21">21</span></p>
+                    <h3>platillos en el menú</h3>
+                    <p>Guisados, caldos, antojos de la casa y desayunos.</p>
+                </div>
+            </article>
+            <article class="cell cell--c" data-reveal>
+                <span class="cell__rays" aria-hidden="true"></span>
+                <div class="cell__body">
+                    <p class="cell__big">A mano</p>
+                    <h3>Tortillas hechas a mano</h3>
+                    <p>Como debe ser: una por una.</p>
+                </div>
+            </article>
+            <article class="cell cell--d" data-reveal>
+                <div class="compare" id="compare" aria-label="Comparador: costilla en salsa verde y en salsa roja">
+                    <img class="compare__a" src="img/web/costilla-roja.jpg" width="580" height="605" alt="Costilla de puerco en salsa roja" loading="lazy">
+                    <img class="compare__b" src="img/web/costilla-verde.jpg" width="670" height="442" alt="Costilla de puerco en salsa verde" loading="lazy">
+                    <span class="compare__tag compare__tag--r">Roja</span>
+                    <span class="compare__tag compare__tag--v">Verde</span>
+                    <span class="compare__handle" aria-hidden="true"><i class="ph ph-caret-left"></i><i class="ph ph-caret-right"></i></span>
+                    <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar salsa verde y roja">
+                </div>
+                <div class="cell__body cell__body--over">
+                    <h3>Verde o roja, tú eliges</h3>
+                    <p>Desliza y decide tu salsa.</p>
+                </div>
+            </article>
+            <article class="cell cell--e" data-reveal>
+                <img class="cell__bg" src="img/web/huevos-jamon.jpg" width="460" height="350" alt="Huevos revueltos con jamón, frijoles y totopos" loading="lazy">
+                <div class="cell__body">
+                    <p class="cell__num"><span data-count="5">5</span></p>
+                    <h3>desayunos para empezar bien</h3>
+                    <p>Huevos, chilaquiles, omelet y hotcakes.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ CÓMO PEDIR ═══════════════════════ -->
+<section class="steps" id="pedir" aria-labelledby="steps-t">
+    <div class="wrap steps__grid">
+        <header class="steps__head" data-reveal>
+            <h2 id="steps-t" data-split>Pedir es así de fácil</h2>
+            <p>Tres pasos y tu antojo va en camino a la mesa.</p>
+            <a class="btn btn--primary btn--lg" data-wa data-msg="Hola Señor Chris, estoy listo para hacer mi pedido." href="#contacto">
+                <span class="btn__label">Estoy listo para pedir</span>
+                <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+            </a>
+        </header>
+        <ol class="steps__list" id="stepsList">
+            <li class="step" data-reveal>
+                <span class="step__dot" aria-hidden="true"></span>
+                <h3>Elige tu antojo</h3>
+                <p>Recorre el menú y toca + en lo que se te antoje. Sin cuentas ni registros.</p>
+            </li>
+            <li class="step" data-reveal>
+                <span class="step__dot" aria-hidden="true"></span>
+                <h3>Escríbenos por WhatsApp</h3>
+                <p>Tu selección llega lista en un mensaje. Solo agrega tu nombre y envíalo.</p>
+            </li>
+            <li class="step" data-reveal>
+                <span class="step__dot" aria-hidden="true"></span>
+                <h3>Confirmamos y a disfrutar</h3>
+                <p>Te respondemos para confirmar tu pedido y los detalles. Lo demás lo pone el comal.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ═══════════════════════ CTA FINAL ═══════════════════════ -->
+<section class="finale" id="antojo" aria-labelledby="finale-t">
+    <canvas class="embers" id="embersFinale" aria-hidden="true"></canvas>
+    <span class="finale__rings" aria-hidden="true"><i></i><i></i><i></i></span>
+    <div class="wrap finale__body">
+        <h2 id="finale-t" data-split>¿Ya se te antojó?</h2>
+        <p data-reveal>Cuéntanos qué se te antoja hoy y lo preparamos con gusto.</p>
+        <div class="finale__cta" data-reveal>
+            <a class="btn btn--primary btn--xl" data-wa data-msg="Hola Señor Chris, sí quiero mi pedido. ¿Me ayudan?" href="#contacto">
+                <span class="btn__label">Sí, quiero mi pedido</span>
+                <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ CONTACTO ═══════════════════════ -->
+<section class="contact" id="contacto" aria-labelledby="contact-t">
+    <div class="wrap contact__grid">
+        <div class="contact__info">
+            <header class="sec-head sec-head--left" data-reveal>
+                <h2 id="contact-t" data-split>Escríbenos, aquí te atendemos</h2>
+                <p>Cuéntanos qué se te antoja y te respondemos por WhatsApp.</p>
+            </header>
+            <ul class="info">
+                <li class="info__item" data-reveal>
+                    <span class="info__ic"><svg width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg></span>
+                    <div><h3>WhatsApp</h3><a data-wa-link data-wa data-msg="Hola Señor Chris, quiero hacer una consulta." href="#contacto" id="infoPhone">Escríbenos por WhatsApp</a></div>
+                </li>
+                <li class="info__item" data-reveal>
+                    <span class="info__ic"><i class="ph ph-map-pin" aria-hidden="true"></i></span>
+                    <div><h3>Ubicación</h3><p id="infoAddress">Pídenos la ubicación por WhatsApp y te la mandamos.</p></div>
+                </li>
+                <li class="info__item" data-reveal>
+                    <span class="info__ic"><i class="ph ph-clock" aria-hidden="true"></i></span>
+                    <div><h3>Horario</h3><p id="infoHours">Consulta nuestro horario por WhatsApp.</p></div>
+                </li>
+            </ul>
+            <div class="map" id="mapBox" hidden data-reveal></div>
+            <ul class="social" id="social" hidden data-reveal aria-label="Redes sociales">
+                <li><a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram de Señor Chris" hidden><svg width="20" height="20" aria-hidden="true"><use href="#i-ig"/></svg></a></li>
+                <li><a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook de Señor Chris" hidden><svg width="20" height="20" aria-hidden="true"><use href="#i-fb"/></svg></a></li>
+                <li><a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok de Señor Chris" hidden><svg width="20" height="20" aria-hidden="true"><use href="#i-tt"/></svg></a></li>
+            </ul>
+        </div>
+
+        <div class="formcard" data-reveal>
+            <h3>Cuéntanos tu antojo</h3>
+            <form id="orderForm" novalidate>
+                <div class="field">
+                    <label for="f-name">Tu nombre</label>
+                    <input id="f-name" name="nombre" type="text" autocomplete="name" placeholder="Ej. María González" required aria-describedby="f-name-err">
+                    <p class="field__err" id="f-name-err" role="alert"></p>
+                </div>
+                <div class="field">
+                    <label for="f-type">¿Qué buscas?</label>
+                    <select id="f-type" name="tipo" required aria-describedby="f-type-err">
+                        <option value="" disabled selected>Elige una opción</option>
+                        <option>Desayuno</option>
+                        <option>Comida</option>
+                        <option>Caldos</option>
+                        <option>Pedido para varias personas</option>
+                        <option>Otra consulta</option>
+                    </select>
+                    <p class="field__err" id="f-type-err" role="alert"></p>
+                </div>
+                <div class="field" id="formDishesWrap" hidden>
+                    <span class="field__label">Tu antojo incluye</span>
+                    <ul class="chips" id="formDishes"></ul>
+                </div>
+                <div class="field">
+                    <label for="f-msg">Cuéntanos más <small>(opcional)</small></label>
+                    <textarea id="f-msg" name="mensaje" rows="3" placeholder="Ej. Para hoy a las 3 pm, 4 personas."></textarea>
+                </div>
+                <button class="btn btn--primary btn--lg btn--block" type="submit" id="formSubmit">
+                    <span class="btn__label">Mándanos mi antojo</span>
+                    <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+                </button>
+                <p class="form__ok" id="formOk" role="status" hidden>Listo, abrimos WhatsApp con tu mensaje. <a id="formOkLink" href="#" target="_blank" rel="noopener">¿No se abrió? Toca aquí.</a></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════ PIE ═══════════════════════ -->
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__top">
+            <a class="footer__logo" href="#inicio" aria-label="Señor Chris, volver arriba">
+                <img src="img/web/logo.webp" width="827" height="345" alt="Señor Chris, comida estilo Guerrero" loading="lazy">
+            </a>
+            <nav class="footer__nav" aria-label="Pie de página">
+                <a href="#menu">Menú</a>
+                <a href="#sazon">Sazón</a>
+                <a href="#galeria">Galería</a>
+                <a href="#pedir">Cómo pedir</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <p>© <span id="year">2026</span> Señor Chris. Comida estilo Guerrero. Tortillas hechas a mano.</p>
+            <a class="footer__up" href="#inicio" aria-label="Volver arriba"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════════ BANDEJA "MI ANTOJO" ═══════════════════════ -->
+<aside class="tray" id="tray" aria-label="Tu antojo">
+    <div class="tray__info">
+        <span class="tray__count" id="trayCount">0</span>
+        <div><b id="trayTitle">antojos</b><small id="trayNames"></small></div>
+    </div>
+    <div class="tray__actions">
+        <button class="tray__clear" id="trayClear" type="button" aria-label="Vaciar mi antojo"><i class="ph ph-x" aria-hidden="true"></i></button>
+        <a class="btn btn--primary btn--sm" id="traySend" data-wa data-wa-dynamic href="#contacto">
+            <span class="btn__label">Enviar</span>
+            <svg width="16" height="16" aria-hidden="true"><use href="#i-wa"/></svg>
+        </a>
+    </div>
+</aside>
+
+<!-- ═══════════════════════ WHATSAPP FLOTANTE ═══════════════════════ -->
+<a class="wa" id="waFloat" data-wa data-msg="Hola Señor Chris, quiero hacer un pedido." href="#contacto" aria-label="Escríbenos por WhatsApp">
+    <span class="wa__tip" id="waTip">¿Se te antojó algo?</span>
+    <span class="wa__btn"><svg width="28" height="28" aria-hidden="true"><use href="#i-wa"/></svg></span>
+</a>
+
+<!-- ═══════════════════════ VISOR DE FOTOS ═══════════════════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <div class="lightbox__scrim" data-close></div>
+    <button class="lightbox__close" type="button" data-close aria-label="Cerrar"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" id="lbPrev" aria-label="Foto anterior"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" id="lbNext" aria-label="Foto siguiente"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+    <figure class="lightbox__fig">
+        <img id="lbImg" src="" alt="">
+        <figcaption>
+            <span id="lbCap"></span>
+            <a class="btn btn--primary btn--sm" id="lbCta" data-wa href="#contacto">
+                <span class="btn__label">Quiero este platillo</span>
+                <span class="btn__ic" aria-hidden="true"><i class="ph ph-arrow-up-right"></i></span>
+            </a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-- Librerías: GSAP + ScrollTrigger (animación por scroll) y Lenis (scroll suave). Si no cargan, el sitio sigue funcionando. -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="app.js"></script>
+</body>
+</html>
